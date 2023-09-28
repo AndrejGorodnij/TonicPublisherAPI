@@ -8,7 +8,7 @@
 
 ### Step #2 - create Client instance and use one of methods
 
-```
+```python
 from TonicPublisherAPI import TonicAPIClient
 
 # Important - you need to initialize TonicAPIClient() inside async function because of aiohttp session,
@@ -38,7 +38,7 @@ This package use `aiohttp` library to make requests to the Tonic Publishers API,
 
 Example #1
 
-```
+```python
 import asyncio
 from TonicPublisherAPI import TonicAPIClient
 
@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
 Example #1 Output
 
-```
+```JSON
 [
   {
     "id": "1",
