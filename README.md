@@ -1,4 +1,6 @@
-# Async API wrapper for [TONIC.for Publishers Api V3](https://publisher.tonic.com/privileged/docs/api-documentation)
+# Async Python API wrapper for [TONIC.for Publishers Api V3](https://publisher.tonic.com/privileged/docs/api-documentation)
+
+Writed using pure Python, default JSON python module and [aiohttp](https://github.com/aio-libs/aiohttp)
 
 ## How to use this package?
 
@@ -11,8 +13,7 @@
 ```python
 from TonicPublisherAPI import TonicAPIClient
 
-# Important - you need to initialize TonicAPIClient() inside async function because of aiohttp session,
-that created on __init__() and used for all class methods to speedup network requests.
+# Important - you need to initialize TonicAPIClient() inside async function because of aiohttp session, that created on __init__() and used for all class methods to speedup network requests.
 
 client = TonicAPIClient(your_consumer_key, your_consumer_password)
 
